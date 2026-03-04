@@ -1,11 +1,11 @@
 body {
-    background-color: cornsilk;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
     height: 150px;
-    background-color: cadetblue;
+    background-color: rgb(148, 210, 212);
 }
 
 nav {
@@ -17,7 +17,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: rgb(107, 171, 173);
 }
 
 ul li {
@@ -33,5 +33,5 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: rgb(107, 171, 173);
 }
