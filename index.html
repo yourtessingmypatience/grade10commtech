@@ -21,12 +21,86 @@
     </nav>
 
     <main>
-        <h1>Welcome to my Grade 10 CommTech Website</h1>
-        <p>This course is all about creativity and control — working with layers, mastering selections, blending images,
-            adding effects, and building professional-looking compositions from scratch. Whether you’re designing a
-            movie poster, editing photos, or creating original digital art, you’ll develop skills that real designers
-            use every day.</p>
+
+        <h1 id="demo1">Welcome to my Grade 10 CommTech Website</h1>
+        <p id="demo">Im awesome and everyone loves me</p>
+
+        <button type="button" onclick='document.getElementById("demo1").innerHTML = "CHEESE"'>Cheese</button>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "PICKLES"'>Pickles</button>
+
+        <button onclick="sayHello()">Alert!</button>
+        <button onclick="sayHello1()">Alert!!</button>
+
+        <p id="demo2">BURRITO!!</p>
+
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='40px'">Size</button>
+        <button type="button" onclick="document.getElementById('demo2').style.color='red'">Color</button>
+    
+         <p>Likes: <span id="display">0</span></p>
+
+         <p>Surprise at 100 likes!</p>
+
+         <button onclick="countClicks()">Click Me!</button>
+
+        <button onclick="toggleTheme()">Toggle Theme</button>
+
+        <p id="text">CLICK 5 TIMES IF YOU LIKE RED THAI CURRY SHRIMP</p>
+
+        <button onclick="handleAction()">Do Action</button>
+
+
     </main>
+
+        
+    <script>
+
+         let actions = 0;
+
+        function handleAction() {
+            actions++;
+
+            if (actions >= 5) {
+                const paragraph = document.getElementById("text");
+               
+                paragraph.innerHTML = "I guess you like red thai curry shrimp";
+               
+                paragraph.style.color = "green";
+             }
+        }    
+
+        let mode = 0;
+
+        function toggleTheme() {
+            if (mode === 0) {
+                document.body.style.backgroundColor = "#1a1a1a";
+                document.body.style.color = "#ffffff";
+                mode = 1;
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+                mode = 0;
+            }
+        }
+
+        let count = 0;
+
+        function countClicks() {
+        count = count + 1;
+        
+        document.getElementById("display").innerText = count;
+        }
+
+         function sayHello() {
+         alert("CHERRY POT PIE");
+         }
+        
+         function sayHello1() {
+         alert("CHICKEN POT PIE");
+         }
+
+    </script>
+
+
 </body>
 
 </html>
